@@ -24,6 +24,7 @@ class Habit:
     def calculate_xp(self) -> int:
         xp = self.base_xp + self.__days_streak * self.xp_growth_coef
 
-
+    def __str__(self):
+        return f'Habit {self.name}\nAquires in {self.habit_days}\nBase xp {self.base_xp}\nXp_coef {self.xp_growth_coef}\nStreak: {self.__days_streak}\nDone today: {self.__today_submition}\n'
 
     
